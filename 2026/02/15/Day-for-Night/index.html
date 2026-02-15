@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Day for Night 调色完全教程从基础到高级的日转夜调色技术指南  什么是 Day for Night？Day for Night（日转夜，也称为 La Nuit Américaine）是一种电影制作技术，通过在白天拍摄并在后期调色来模拟夜景效果。这种技术可以避免夜间拍摄的高成本、照明困难和安全问题，同时获得更好的画质和更快的拍摄速度。 经典应用：《教父》、《指环王》、《疯狂的麦克斯：狂暴">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Day-for-Night">
+<meta property="og:url" content="http://example.com/2026/02/15/Day-for-Night/index.html">
+<meta property="og:site_name" content="Aoi blog">
+<meta property="og:description" content="Day for Night 调色完全教程从基础到高级的日转夜调色技术指南  什么是 Day for Night？Day for Night（日转夜，也称为 La Nuit Américaine）是一种电影制作技术，通过在白天拍摄并在后期调色来模拟夜景效果。这种技术可以避免夜间拍摄的高成本、照明困难和安全问题，同时获得更好的画质和更快的拍摄速度。 经典应用：《教父》、《指环王》、《疯狂的麦克斯：狂暴">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-02-15T10:24:04.000Z">
+<meta property="article:modified_time" content="2026-02-15T10:25:21.564Z">
+<meta property="article:author" content="Aoi">
+<meta property="article:tag" content="调色">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Day-for-Night</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/TwilightKaze">Projects</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2026/01/31/learn-Rust/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2026/02/15/Day-for-Night/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2026/02/15/Day-for-Night/&text=Day-for-Night"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2026/02/15/Day-for-Night/&is_video=false&description=Day-for-Night"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Day-for-Night&body=Check out this article: http://example.com/2026/02/15/Day-for-Night/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2026/02/15/Day-for-Night/&name=Day-for-Night&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2026/02/15/Day-for-Night/&t=Day-for-Night"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Day-for-Night-%E8%B0%83%E8%89%B2%E5%AE%8C%E5%85%A8%E6%95%99%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">Day for Night 调色完全教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Day-for-Night%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是 Day for Night？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E6%9C%9F%E6%8B%8D%E6%91%84%E5%87%86%E5%A4%87"><span class="toc-number">1.2.</span> <span class="toc-text">一、前期拍摄准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%9C%80%E4%BD%B3%E6%8B%8D%E6%91%84%E6%97%B6%E9%97%B4"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 最佳拍摄时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%9B%B8%E6%9C%BA%E8%AE%BE%E7%BD%AE%E5%BB%BA%E8%AE%AE"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 相机设置建议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%B0%83%E8%89%B2%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">1.3.</span> <span class="toc-text">二、调色工作流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-1%EF%BC%9A%E5%9F%BA%E7%A1%80%E6%9B%9D%E5%85%89%E8%B0%83%E6%95%B4"><span class="toc-number">1.3.1.</span> <span class="toc-text">步骤 1：基础曝光调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-2%EF%BC%9A%E8%89%B2%E6%B8%A9%E4%B8%8E%E8%89%B2%E8%B0%83"><span class="toc-number">1.3.2.</span> <span class="toc-text">步骤 2：色温与色调</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-3%EF%BC%9A%E6%9B%B2%E7%BA%BF%E8%B0%83%E6%95%B4%EF%BC%88%E5%85%B3%E9%94%AE%E6%AD%A5%E9%AA%A4%EF%BC%89"><span class="toc-number">1.3.3.</span> <span class="toc-text">步骤 3：曲线调整（关键步骤）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-4%EF%BC%9AHSL-%E7%B2%BE%E7%BB%86%E8%B0%83%E6%95%B4"><span class="toc-number">1.3.4.</span> <span class="toc-text">步骤 4：HSL 精细调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-5%EF%BC%9A%E8%89%B2%E5%BD%A9%E5%88%86%E7%BA%A7%EF%BC%88Color-Wheels%EF%BC%89"><span class="toc-number">1.3.5.</span> <span class="toc-text">步骤 5：色彩分级（Color Wheels）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7"><span class="toc-number">1.4.</span> <span class="toc-text">三、高级技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%81%AE%E7%BD%A9%E4%B8%8E%E9%80%89%E6%8B%A9%E6%80%A7%E8%B0%83%E8%89%B2"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. 遮罩与选择性调色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A2%97%E7%B2%92%E4%B8%8E%E8%B4%A8%E6%84%9F"><span class="toc-number">1.4.2.</span> <span class="toc-text">2. 颗粒与质感</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%B8%90%E6%99%95%E4%B8%8E%E6%B0%9B%E5%9B%B4"><span class="toc-number">1.4.3.</span> <span class="toc-text">3. 渐晕与氛围</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%8A%A8%E6%80%81%E8%8C%83%E5%9B%B4%E7%AE%A1%E7%90%86"><span class="toc-number">1.4.4.</span> <span class="toc-text">4. 动态范围管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E8%BD%AF%E4%BB%B6%E7%89%B9%E5%AE%9A%E6%93%8D%E4%BD%9C"><span class="toc-number">1.5.</span> <span class="toc-text">四、软件特定操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DaVinci-Resolve"><span class="toc-number">1.5.1.</span> <span class="toc-text">DaVinci Resolve</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Adobe-Premiere-Pro-After-Effects"><span class="toc-number">1.5.2.</span> <span class="toc-text">Adobe Premiere Pro &#x2F; After Effects</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Final-Cut-Pro"><span class="toc-number">1.5.3.</span> <span class="toc-text">Final Cut Pro</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.6.</span> <span class="toc-text">五、常见错误与解决方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%B8%93%E4%B8%9A%E5%BB%BA%E8%AE%AE"><span class="toc-number">1.7.</span> <span class="toc-text">六、专业建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%BF%AB%E9%80%9F%E5%8F%82%E8%80%83%E6%95%B0%E5%80%BC"><span class="toc-number">1.8.</span> <span class="toc-text">七、快速参考数值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%B0%83%E6%95%B4%E6%8E%A8%E8%8D%90%E5%80%BC"><span class="toc-number">1.8.1.</span> <span class="toc-text">基础调整推荐值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.9.</span> <span class="toc-text">总结</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Day-for-Night
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Aoi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2026-02-15T10:24:04.000Z" class="dt-published" itemprop="datePublished">2026-02-15</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/%E8%B0%83%E8%89%B2/" rel="tag">调色</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="Day-for-Night-调色完全教程"><a href="#Day-for-Night-调色完全教程" class="headerlink" title="Day for Night 调色完全教程"></a>Day for Night 调色完全教程</h1><p><em>从基础到高级的日转夜调色技术指南</em></p>
+<hr>
+<h2 id="什么是-Day-for-Night？"><a href="#什么是-Day-for-Night？" class="headerlink" title="什么是 Day for Night？"></a>什么是 Day for Night？</h2><p>Day for Night（日转夜，也称为 La Nuit Américaine）是一种电影制作技术，通过在白天拍摄并在后期调色来模拟夜景效果。这种技术可以避免夜间拍摄的高成本、照明困难和安全问题，同时获得更好的画质和更快的拍摄速度。</p>
+<p><strong>经典应用：</strong>《教父》、《指环王》、《疯狂的麦克斯：狂暴之路》等众多经典电影都使用了这一技术。</p>
+<hr>
+<h2 id="一、前期拍摄准备"><a href="#一、前期拍摄准备" class="headerlink" title="一、前期拍摄准备"></a>一、前期拍摄准备</h2><h3 id="1-最佳拍摄时间"><a href="#1-最佳拍摄时间" class="headerlink" title="1. 最佳拍摄时间"></a>1. 最佳拍摄时间</h3><ul>
+<li><strong>黄金时段（Golden Hour）</strong>：日出后30分钟或日落前30分钟，光线柔和，对比度适中</li>
+<li><strong>蓝调时段（Blue Hour）</strong>：日出前或日落后的20-40分钟，天空呈现深蓝色，最接近夜景效果</li>
+<li><strong>阴天</strong>：均匀的漫射光，避免强烈阴影，后期处理更容易</li>
+</ul>
+<h3 id="2-相机设置建议"><a href="#2-相机设置建议" class="headerlink" title="2. 相机设置建议"></a>2. 相机设置建议</h3><ul>
+<li><strong>欠曝 1-2 档</strong>：降低整体亮度，保留高光细节</li>
+<li><strong>使用 ND 滤镜</strong>：减少进光量，允许更大光圈获得浅景深</li>
+<li><strong>色温设置偏冷</strong>：5000K-5500K，或使用钨丝灯白平衡（约3200K）</li>
+<li><strong>Log 或 RAW 格式</strong>：最大化动态范围和后期调整空间</li>
+</ul>
+<hr>
+<h2 id="二、调色工作流程"><a href="#二、调色工作流程" class="headerlink" title="二、调色工作流程"></a>二、调色工作流程</h2><h3 id="步骤-1：基础曝光调整"><a href="#步骤-1：基础曝光调整" class="headerlink" title="步骤 1：基础曝光调整"></a>步骤 1：基础曝光调整</h3><ol>
+<li><strong>降低曝光值</strong>：将整体亮度降低 -1.5 到 -3 档</li>
+<li><strong>压暗高光</strong>：Highlights -30 到 -50，避免天空过曝</li>
+<li><strong>提升阴影</strong>：Shadows +10 到 +20，保留暗部细节</li>
+<li><strong>降低白色</strong>：Whites -20 到 -40</li>
+<li><strong>压暗黑色</strong>：Blacks -15 到 -30，增加对比度</li>
+</ol>
+<h3 id="步骤-2：色温与色调"><a href="#步骤-2：色温与色调" class="headerlink" title="步骤 2：色温与色调"></a>步骤 2：色温与色调</h3><ol>
+<li><strong>降低色温</strong>：-1000 到 -2000K，偏向蓝色调</li>
+<li><strong>调整色调</strong>：Tint +5 到 +10，轻微偏绿&#x2F;青色</li>
+<li><strong>饱和度</strong>：降低 -10 到 -20，夜晚色彩较淡</li>
+</ol>
+<h3 id="步骤-3：曲线调整（关键步骤）"><a href="#步骤-3：曲线调整（关键步骤）" class="headerlink" title="步骤 3：曲线调整（关键步骤）"></a>步骤 3：曲线调整（关键步骤）</h3><p><strong>RGB 主曲线：</strong></p>
+<ul>
+<li>压低中间调和高光部分</li>
+<li>轻微提升阴影，避免全黑</li>
+<li>创建轻微 S 型曲线增加对比</li>
+</ul>
+<p><strong>蓝色通道：</strong></p>
+<ul>
+<li>提升整体蓝色曲线（向上移动）</li>
+<li>在阴影部分增加更多蓝色</li>
+</ul>
+<p><strong>红色通道：</strong></p>
+<ul>
+<li>轻微降低红色（向下移动）</li>
+<li>在高光部分减少红色，模拟月光</li>
+</ul>
+<h3 id="步骤-4：HSL-精细调整"><a href="#步骤-4：HSL-精细调整" class="headerlink" title="步骤 4：HSL 精细调整"></a>步骤 4：HSL 精细调整</h3><p><strong>色相调整：</strong></p>
+<ul>
+<li>橙色向红色偏移 -15</li>
+<li>黄色向绿色偏移 +10</li>
+<li>蓝色保持或轻微调整 -5</li>
+</ul>
+<p><strong>饱和度调整：</strong></p>
+<ul>
+<li>橙色 -30 到 -50（肤色去饱和）</li>
+<li>黄色 -20 到 -40</li>
+<li>蓝色 +10 到 +20（强化夜晚氛围）</li>
+<li>青色 +15（增强月光感）</li>
+</ul>
+<p><strong>明度调整：</strong></p>
+<ul>
+<li>橙色 -20 到 -30</li>
+<li>黄色 -15 到 -25</li>
+<li>蓝色 -10（避免过亮）</li>
+</ul>
+<h3 id="步骤-5：色彩分级（Color-Wheels）"><a href="#步骤-5：色彩分级（Color-Wheels）" class="headerlink" title="步骤 5：色彩分级（Color Wheels）"></a>步骤 5：色彩分级（Color Wheels）</h3><ul>
+<li><strong>阴影（Shadows）</strong>：向蓝色&#x2F;青色偏移，强度 20-40%</li>
+<li><strong>中间调（Midtones）</strong>：轻微蓝色，强度 10-20%</li>
+<li><strong>高光（Highlights）</strong>：保持冷色调或添加淡青色，强度 5-15%</li>
+</ul>
+<hr>
+<h2 id="三、高级技巧"><a href="#三、高级技巧" class="headerlink" title="三、高级技巧"></a>三、高级技巧</h2><h3 id="1-遮罩与选择性调色"><a href="#1-遮罩与选择性调色" class="headerlink" title="1. 遮罩与选择性调色"></a>1. 遮罩与选择性调色</h3><ul>
+<li><strong>天空分离</strong>：使用渐变遮罩或 AI 天空选择，单独调整天空色调和亮度</li>
+<li><strong>人物肤色保护</strong>：创建人物遮罩，减少面部的蓝色调，保持自然肤色</li>
+<li><strong>光源区域</strong>：为灯光、窗户等人造光源创建遮罩，保持暖色温，增强夜晚对比</li>
+</ul>
+<h3 id="2-颗粒与质感"><a href="#2-颗粒与质感" class="headerlink" title="2. 颗粒与质感"></a>2. 颗粒与质感</h3><ul>
+<li>添加电影颗粒：10-20 强度，模拟夜间高 ISO 拍摄</li>
+<li>轻微锐化：增强细节，但避免过度</li>
+<li>降低清晰度：-5 到 -10，营造朦胧夜晚感</li>
+</ul>
+<h3 id="3-渐晕与氛围"><a href="#3-渐晕与氛围" class="headerlink" title="3. 渐晕与氛围"></a>3. 渐晕与氛围</h3><ul>
+<li>边缘渐晕：-15 到 -30，将注意力集中在画面中心</li>
+<li>光晕效果：在光源周围添加柔和光晕，增强氛围</li>
+</ul>
+<h3 id="4-动态范围管理"><a href="#4-动态范围管理" class="headerlink" title="4. 动态范围管理"></a>4. 动态范围管理</h3><ul>
+<li>使用区域调色（Power Windows）针对不同区域精细调整</li>
+<li>保持一定的对比度，避免画面过平</li>
+<li>黑位点设置：确保最暗部分不是纯黑（RGB 10-15）</li>
+</ul>
+<hr>
+<h2 id="四、软件特定操作"><a href="#四、软件特定操作" class="headerlink" title="四、软件特定操作"></a>四、软件特定操作</h2><h3 id="DaVinci-Resolve"><a href="#DaVinci-Resolve" class="headerlink" title="DaVinci Resolve"></a>DaVinci Resolve</h3><ol>
+<li>Color 页面 → Primaries 面板进行基础调整</li>
+<li>Curves 面板进行 RGB 和通道曲线调整</li>
+<li>HSL 面板精细调整色相、饱和度、明度</li>
+<li>使用 Qualifier 和 Power Windows 进行选择性调色</li>
+<li>添加节点（Node）分层处理：基础节点 → 肤色节点 → 天空节点 → 光源节点</li>
+</ol>
+<h3 id="Adobe-Premiere-Pro-After-Effects"><a href="#Adobe-Premiere-Pro-After-Effects" class="headerlink" title="Adobe Premiere Pro &#x2F; After Effects"></a>Adobe Premiere Pro &#x2F; After Effects</h3><ol>
+<li>Lumetri Color 面板进行基础调整</li>
+<li>使用 RGB Curves 效果进行通道调整</li>
+<li>Color Wheels 调整阴影、中间调、高光色彩</li>
+<li>使用遮罩工具（Mask）进行区域调色</li>
+<li>堆叠多个调整图层（Adjustment Layer）实现复杂效果</li>
+</ol>
+<h3 id="Final-Cut-Pro"><a href="#Final-Cut-Pro" class="headerlink" title="Final Cut Pro"></a>Final Cut Pro</h3><ol>
+<li>Color Board 进行基础色彩调整</li>
+<li>Color Curves 进行精细曲线调整</li>
+<li>Color Wheels 调整色温和色调</li>
+<li>使用 Shape Mask 和 Color Mask 进行选择性调色</li>
+</ol>
+<hr>
+<h2 id="五、常见错误与解决方案"><a href="#五、常见错误与解决方案" class="headerlink" title="五、常见错误与解决方案"></a>五、常见错误与解决方案</h2><table>
+<thead>
+<tr>
+<th>常见问题</th>
+<th>表现</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>过度降低曝光</td>
+<td>画面全黑，细节丢失</td>
+<td>保持阴影细节，使用曲线精细控制</td>
+</tr>
+<tr>
+<td>蓝色调过重</td>
+<td>画面不自然，偏冷</td>
+<td>平衡色温，保护肤色，添加暖光源</td>
+</tr>
+<tr>
+<td>对比度不足</td>
+<td>画面平淡，缺乏层次</td>
+<td>使用 S 曲线增强对比，调整黑白点</td>
+</tr>
+<tr>
+<td>天空过曝</td>
+<td>白色天空，失去层次</td>
+<td>前期拍摄保护高光，后期遮罩压暗天空</td>
+</tr>
+<tr>
+<td>肤色不自然</td>
+<td>人物面部过蓝或发灰</td>
+<td>使用 HSL 或遮罩单独调整橙色，保持温度</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="六、专业建议"><a href="#六、专业建议" class="headerlink" title="六、专业建议"></a>六、专业建议</h2><ul>
+<li><strong>循序渐进</strong>：从轻微调整开始，逐步增强效果，避免一步到位</li>
+<li><strong>参考真实夜景</strong>：观察月光下的实际色彩和光线表现</li>
+<li><strong>保持一致性</strong>：同一场景的所有镜头使用相同或相似的调色设置</li>
+<li><strong>监视器校准</strong>：确保显示器已正确校准，避免色彩偏差</li>
+<li><strong>多设备测试</strong>：在不同显示器和设备上查看效果</li>
+<li><strong>保存预设</strong>：创建自己的 Day for Night LUT 或预设，提高效率</li>
+<li><strong>考虑故事情绪</strong>：根据场景情绪调整色调 — 恐怖片可更冷更暗，浪漫片可保留温暖</li>
+</ul>
+<hr>
+<h2 id="七、快速参考数值"><a href="#七、快速参考数值" class="headerlink" title="七、快速参考数值"></a>七、快速参考数值</h2><h3 id="基础调整推荐值"><a href="#基础调整推荐值" class="headerlink" title="基础调整推荐值"></a>基础调整推荐值</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>轻度效果</th>
+<th>强烈效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>曝光</strong></td>
+<td>-1.5 档</td>
+<td>-2.5 到 -3 档</td>
+</tr>
+<tr>
+<td><strong>色温</strong></td>
+<td>-1000K</td>
+<td>-1500 到 -2000K</td>
+</tr>
+<tr>
+<td><strong>饱和度</strong></td>
+<td>-10</td>
+<td>-20 到 -30</td>
+</tr>
+<tr>
+<td><strong>高光</strong></td>
+<td>-30</td>
+<td>-50 到 -70</td>
+</tr>
+<tr>
+<td><strong>蓝色饱和度</strong></td>
+<td>+10</td>
+<td>+20 到 +30</td>
+</tr>
+<tr>
+<td><strong>橙色饱和度</strong></td>
+<td>-30</td>
+<td>-40 到 -50</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Day for Night 调色是一门需要实践和经验积累的技术。关键在于理解夜晚光线的特性，并通过色彩、对比度和细节的精心调整来重现这种氛围。记住，最好的 Day for Night 效果是那些让观众感觉自然、不刻意的画面。</p>
+<p><strong>持续练习和实验</strong>是掌握这项技术的唯一途径。尝试不同的参数组合，研究电影作品的调色风格，最终找到属于你自己的 Day for Night 风格。</p>
+<hr>
+<p><em>© 2026 Day for Night 调色教程</em></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="https://github.com/TwilightKaze">Projects</a></li>
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Day-for-Night-%E8%B0%83%E8%89%B2%E5%AE%8C%E5%85%A8%E6%95%99%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">Day for Night 调色完全教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Day-for-Night%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是 Day for Night？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E6%9C%9F%E6%8B%8D%E6%91%84%E5%87%86%E5%A4%87"><span class="toc-number">1.2.</span> <span class="toc-text">一、前期拍摄准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%9C%80%E4%BD%B3%E6%8B%8D%E6%91%84%E6%97%B6%E9%97%B4"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 最佳拍摄时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%9B%B8%E6%9C%BA%E8%AE%BE%E7%BD%AE%E5%BB%BA%E8%AE%AE"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 相机设置建议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%B0%83%E8%89%B2%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">1.3.</span> <span class="toc-text">二、调色工作流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-1%EF%BC%9A%E5%9F%BA%E7%A1%80%E6%9B%9D%E5%85%89%E8%B0%83%E6%95%B4"><span class="toc-number">1.3.1.</span> <span class="toc-text">步骤 1：基础曝光调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-2%EF%BC%9A%E8%89%B2%E6%B8%A9%E4%B8%8E%E8%89%B2%E8%B0%83"><span class="toc-number">1.3.2.</span> <span class="toc-text">步骤 2：色温与色调</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-3%EF%BC%9A%E6%9B%B2%E7%BA%BF%E8%B0%83%E6%95%B4%EF%BC%88%E5%85%B3%E9%94%AE%E6%AD%A5%E9%AA%A4%EF%BC%89"><span class="toc-number">1.3.3.</span> <span class="toc-text">步骤 3：曲线调整（关键步骤）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-4%EF%BC%9AHSL-%E7%B2%BE%E7%BB%86%E8%B0%83%E6%95%B4"><span class="toc-number">1.3.4.</span> <span class="toc-text">步骤 4：HSL 精细调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-5%EF%BC%9A%E8%89%B2%E5%BD%A9%E5%88%86%E7%BA%A7%EF%BC%88Color-Wheels%EF%BC%89"><span class="toc-number">1.3.5.</span> <span class="toc-text">步骤 5：色彩分级（Color Wheels）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7"><span class="toc-number">1.4.</span> <span class="toc-text">三、高级技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%81%AE%E7%BD%A9%E4%B8%8E%E9%80%89%E6%8B%A9%E6%80%A7%E8%B0%83%E8%89%B2"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. 遮罩与选择性调色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A2%97%E7%B2%92%E4%B8%8E%E8%B4%A8%E6%84%9F"><span class="toc-number">1.4.2.</span> <span class="toc-text">2. 颗粒与质感</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%B8%90%E6%99%95%E4%B8%8E%E6%B0%9B%E5%9B%B4"><span class="toc-number">1.4.3.</span> <span class="toc-text">3. 渐晕与氛围</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%8A%A8%E6%80%81%E8%8C%83%E5%9B%B4%E7%AE%A1%E7%90%86"><span class="toc-number">1.4.4.</span> <span class="toc-text">4. 动态范围管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E8%BD%AF%E4%BB%B6%E7%89%B9%E5%AE%9A%E6%93%8D%E4%BD%9C"><span class="toc-number">1.5.</span> <span class="toc-text">四、软件特定操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DaVinci-Resolve"><span class="toc-number">1.5.1.</span> <span class="toc-text">DaVinci Resolve</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Adobe-Premiere-Pro-After-Effects"><span class="toc-number">1.5.2.</span> <span class="toc-text">Adobe Premiere Pro &#x2F; After Effects</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Final-Cut-Pro"><span class="toc-number">1.5.3.</span> <span class="toc-text">Final Cut Pro</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.6.</span> <span class="toc-text">五、常见错误与解决方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%B8%93%E4%B8%9A%E5%BB%BA%E8%AE%AE"><span class="toc-number">1.7.</span> <span class="toc-text">六、专业建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%BF%AB%E9%80%9F%E5%8F%82%E8%80%83%E6%95%B0%E5%80%BC"><span class="toc-number">1.8.</span> <span class="toc-text">七、快速参考数值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%B0%83%E6%95%B4%E6%8E%A8%E8%8D%90%E5%80%BC"><span class="toc-number">1.8.1.</span> <span class="toc-text">基础调整推荐值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.9.</span> <span class="toc-text">总结</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2026/02/15/Day-for-Night/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2026/02/15/Day-for-Night/&text=Day-for-Night"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2026/02/15/Day-for-Night/&is_video=false&description=Day-for-Night"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Day-for-Night&body=Check out this article: http://example.com/2026/02/15/Day-for-Night/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2026/02/15/Day-for-Night/&title=Day-for-Night"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2026/02/15/Day-for-Night/&name=Day-for-Night&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2026/02/15/Day-for-Night/&t=Day-for-Night"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2025-2026
+    Aoi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/TwilightKaze">Projects</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
